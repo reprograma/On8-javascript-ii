@@ -13,9 +13,9 @@ O assunto pode ser filme, música, lugares, bandeiras, seriados, jogos de videog
 
 #### O que deve ser feito?
 
-* Ao clicar no botão, deve mostrar na tela as três imagens/gifs dos filmes. Elas devem aparecer em sequência, e não tudo ao mesmo tempo!
+* Ao clicar no botão "Vamos lá?", deve mostrar na tela as três imagens/gifs dos filmes
 
-* Ao clicar no botão "mostrar resposta", os nomes dos filmes devem aparecer um embaixo do outro
+* Ao clicar no botão "Já sei! Conferir resposta", os nomes dos filmes devem aparecer um embaixo do outro
 
 * Utilize função! ela será sua melhor amiga
 
