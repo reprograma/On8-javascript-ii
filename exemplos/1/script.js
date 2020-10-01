@@ -6,10 +6,17 @@ let alunas = ["ana clara", "marina", "fernanda", "luisa"]
 
 
 /*
-------- 2. Usando um loop, faça uma iteração nessa array, dando console.log em todas as pessoas!
+------- 2. Usando um loop, faça uma iteração nessa array, dando console.log em todas as pessoas!*/
 
-------- 3. Escreva um comando que remova o _primeiro_ nome da array
+for(let i=0; i < alunas.length; i++) {
+    console.log(alunas)
+}
 
+/*
+------- 3. Escreva um comando que remova o _primeiro_ nome da array*/
+
+
+/*
 ------- 4. Escreva um comando que remova o _último_ nome da array
 
 ------- 5. Escreva um comando que adicione o nome "Valentina" no começo da array
