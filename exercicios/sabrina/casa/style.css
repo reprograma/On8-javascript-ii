@@ -1,0 +1,103 @@
+@font-face {
+  font-family: rainyhearts;
+  src: url('font/rainyhearts.ttf');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+:root {
+  font-size: 10px;
+}
+
+body {
+  font-family: rainyhearts;
+  font-size: 1.8rem;
+  color:#bd62db;
+  background-image: url('img/tumblr_pje5xycrmS1wvcbfqo1_1280.png');
+}
+
+main {
+  margin: auto;
+  text-align: center;
+  max-width: 700px;
+}
+
+h1 {
+  letter-spacing: 1.8rem;
+  margin: 2rem 0 1.2rem;
+  color: #bd62db);
+}
+
+.escolhaJogadorSection {
+  min-width: 280px;
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  font-size: 2.4rem;
+}
+
+input {
+  text-align: center;
+  font-family: rainyhearts;
+  font-size: .7em;
+  border-radius: 2rem;
+  padding: .5rem;
+  margin:.6rem;
+  border: 2px solid rgb(255, 230, 0)
+}
+
+p {
+  margin: .6rem;
+}
+
+.btn {
+  margin: .6rem 0;
+  padding: 1.5rem;  
+  background-color:#bd62db;
+  color: #ffafd7;
+  border: 2px solid rgb(255, 230, 0);
+  border-radius: 5rem;
+  cursor: pointer;
+  font-family: rainyhearts;
+  font-size: 1.2em;
+}
+
+.btn:hover {
+  background-color:#ffafd7;
+  color: #bd62db;
+  transition: .3s;
+}
+
+.resultado {
+  display: flex;
+  margin:2rem auto;
+  width: 85%;
+  justify-content: space-around;
+  text-transform: uppercase;
+  font-size: 1.2em;
+}
+
+.resultado img {
+  width: 100%;
+}
+
+.jogador, .computador {
+  max-width: 250px;
+  width: 40%;
+}
+
+.imgdisplay {
+  display: none;
+}
+
+.legenda {
+  color: #bd62db;
+  font-size:2em;
+}
