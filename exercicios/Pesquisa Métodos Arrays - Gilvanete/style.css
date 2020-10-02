@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(177, 153, 199);
+}
+
+h1{
+    text-align: center;
+}
+#resultList{
+    text-decoration: none;
+    align-content: center;
+
+}
+
+#result{
+    text-decoration: none;
+    align-content: center;
+    margin-top: 40px;
+    font-size: 24px;
+}
+
+  
+  ul,
+  li {
+    list-style: none;
+  }
+  
