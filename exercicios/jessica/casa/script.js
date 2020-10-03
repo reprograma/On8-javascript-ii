@@ -27,21 +27,20 @@ console.log (resultado);
 
 
 const jogadas = ['Pedra', 'Papel', 'Tesoura'] 
-var botao = document.getElementById('getPlayerChoice');
-const vencedor = document.getElementById('winner')
-var computer = aleatoriedade();
+let botao = document.getElementById('getPlayerChoice');
+const vencedor = document.getElementById('winner');
+const computer = aleatoriedade();
 
-var valido = false;
+let valido = false;
 
 function aleatoriedade(){
     
-    var numeros =Math.floor(Math.random() * 3);
-     return jogadas[numeros]
+    const numeros =Math.floor(Math.random() * 3);
+     return jogadas[numeros];
 };
 
-botao.addEventListener('click', function (event) {
-    event.preventDefault();
-    const player = document.getElementById('playerChoice')
+botao.addEventListener('click', function (jogo) {
+    const player = document.getElementById('playerChoice').value;
 
     if (player === jogadas[0]){
         valido = true; 
@@ -49,11 +48,11 @@ botao.addEventListener('click', function (event) {
     else if (player === jogadas[1]) {
         valido = true;
     } 
-    else if (player === jogadas[2]) {
+    else if (player === jogadas[2]) { 
         valido = true;
     }
 
-    if (valid === true) {
+    if (valido === true) {
 
         if (player === computer) {
         return alert(`Empate! Você e o Computador escolheram ${player}`);
@@ -61,20 +60,32 @@ botao.addEventListener('click', function (event) {
 
         } else if (player === jogadas[0] && computer === jogadas[2]) {
                 
-            return alert(`Você ganhou. Você = ${player} e Computador = ${computer}`)
+            return alert(`Você ganhou. Você = ${player} e Computador = ${computer}`);
 
         } else if (player === jogadas[1] && computer === jogadas[0]) {
             
-            return alert(`Você ganhou. Você = ${player} e Computador = ${computer}`)
+            return alert(`Você ganhou. Você = ${player} e Computador = ${computer}`);
 
         } else if (player === jogadas[2] && computer === jogadas[1]) {
             
-            return alert(`Você ganhou. Você = ${player} e Computador = ${computer}`)
+            return alert(`Você ganhou. Você = ${player} e Computador = ${computer}`);
 
-        } else {
+        } else if (player === jogadas[1] && computer === jogadas[2]){
 
-            return alert(`Você perdeu. Você = ${player} e Computador = ${computer}`)
+            return alert(`Você perdeu. Você = ${player} e Computador = ${computer}`);
 
-        }
-    }    
+        } else if (player === jogadas[0] && computer === jogadas[1]){
+
+            return alert(`Você perdeu. Você = ${player} e Computador = ${computer}`);
+
+        } else if (player === jogadas[2] && computer === jogadas[0]){
+
+            return alert(`Você perdeu. Você = ${player} e Computador = ${computer}`);
+    
+        } 
+    } else {
+
+        return alert('Digite "Pedra" ou "Papel" ou "Tesoura"');
+
+    }   
 });
