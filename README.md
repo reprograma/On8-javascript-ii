@@ -138,6 +138,10 @@ regina
 - [Arrays em Javascript](https://www.devmedia.com.br/javascript-arrays/4079)
 - [Arrays in Javascript - INGLÊS](https://medium.com/swlh/arrays-in-javascript-e64b873ad801)
 
+##### Videos
+- MasterClass Manipulação do DOM com mais ou menos 1h de duração [rocketseat](https://www.youtube.com/watch?v=UftSB4DaRU4&ab_channel=Rocketseat)
+- Introdução ao DOM [Curso em Vídeo](https://www.youtube.com/watch?v=WWZX8RWLxIk&ab_channel=CursoemV%C3%ADdeo): *ps recomendo todos os vídeos dessa playlist sobre javascript!*
+- Arrays: [Curso grátis da Trybe](https://www.youtube.com/watch?v=defBuY0nLrc)
 
 
 
