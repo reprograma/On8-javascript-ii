@@ -8,6 +8,9 @@ let alunas = ["ana clara", "marina", "fernanda", "luisa"]
 /*
 ------- 2. Usando um loop, faça uma iteração nessa array, dando console.log em todas as pessoas!
 
+if
+
+
 ------- 3. Escreva um comando que remova o _primeiro_ nome da array
 
 ------- 4. Escreva um comando que remova o _último_ nome da array
@@ -28,4 +31,4 @@ let alunas = ["ana clara", "marina", "fernanda", "luisa"]
 
 ------- 12. Crie uma variável chamada comMarcela e concatene com a string "Karla"
 
-------- 13. Guarde em uma variável o primeiro nome da array. Depois, sabendo que esse nome é composto, divida o mesmo em duas arrays.
+------- 13. Guarde em uma variável o primeiro nome da array. Depois, sabendo que esse nome é composto, divida o mesmo em duas arrays.*/
