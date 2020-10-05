@@ -32,14 +32,24 @@ const displayMovie = document.getElementById("displayMovie");
 
 //no displayMovie (que é um botão) eu tenho um evento de "clique" que dispara uma ação! 
 displayMovie.addEventListener("click", function() {
-    console.log('cliquei!')
+
+    //"limpa" o conteúdo anterior
+    moviesTitle.innerHTML = "";
+    displayMoviePoster.innerHTML = "";
 
     for(let i=0; i < movies.length; i++) { 
-        console.log(movies[i])
-
         displayMoviePoster.innerHTML += `<img width="600" src=${movies[i]} /> ` 
     } //css-inline
 })
 
 
-// FAÇAM AGORA COM O BOTÃO RESPOSTAS<3 
+displayAnswer.addEventListener("click", function () {
+
+//"limpa" o conteúdo de texto anterior
+    moviesTitle.innerHTML = "";
+    displayMoviePoster.innerHTML = "";
+
+    for(let i=0; i < movies.length; i++) { 
+        displayMovieTitle.innerHTML += `<li>${moviesTitle[i]}</li>`;
+    } //css-inline
+});
