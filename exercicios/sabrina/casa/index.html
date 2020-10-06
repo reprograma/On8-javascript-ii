@@ -1,0 +1,43 @@
+
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="img/purple.ico" type="image/x-icon">
+  <title>jokenpo</title>
+</head>
+
+<body>
+  <main>
+    <h1>PEDRA! PAPEL! TESOURA!</h1>
+
+    <section class="escolhaJogadorSection">
+
+      <label for="nome">qual é seu nome?</label>
+      <input type="text" placeholder="nomezinho" id="nome">
+      <label for="escolha"> eai? <br>
+        pedra, papel ou tesoura?</label>
+      <input type="text" id="escolha" placeholder="mãozinha">
+      <p id="aviso"></p>
+      <button id="botao" class="btn">JOKEEEENPÔ</button>
+    </section>
+
+    <section class="resultado">
+      <div class="jogador">        
+      <img src="img/suave_jogador.svg" alt="" id="imgJogador">
+      <p class="jogadorLegenda">JOGADOR</p>
+
+      </div>
+      <div class="computador">        
+        <img src="img/suave_computador.svg" alt="" id="imgComputador">
+      <p class="computadorLegenda">COMPUTADOR</p>
+
+      </div>
+    </section>
+
+  </main>
+</body>
+<script src="script.js"></script>
+
+</html>
