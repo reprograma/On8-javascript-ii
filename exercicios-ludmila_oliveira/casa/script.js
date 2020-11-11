@@ -1,21 +1,21 @@
 
 // ---------------------------------------------------------MÉTODOS DO ARRAY---------------------------------------------------------------------------
 
-// JOIN - transforma os elementos do array em uma única string
+// // JOIN - transforma os elementos do array em uma única string
 
-let cars = ['gol', 'logan', 'hb20', 'fusca'];
-console.log(cars.join(', ')); //resposta --> "gol, logan, hb20, fusca"
+// let cars = ['gol', 'logan', 'hb20', 'fusca'];
+// console.log(cars.join(', ')); //resposta --> "gol, logan, hb20, fusca"
 
-// FILL - preenche o array com um elemento determinado de acordo com o parâmetro passado, onde o 1º é o valor, 2º index incial 3º é o index final
+// // FILL - preenche o array com um elemento determinado de acordo com o parâmetro passado, onde o 1º é o valor, 2º index incial 3º é o index final
 
-const letter = ['a', 'b', 'c', 'd', 'e', 'f'];
+// const letter = ['a', 'b', 'c', 'd', 'e', 'f'];
 
-console.log(letter.fill('i', 2, 4)); //resposta --> ["a", "b", "i", "i", "e", "f"]
+// console.log(letter.fill('i', 2, 4)); //resposta --> ["a", "b", "i", "i", "e", "f"]
 
-// SORT - ordena de forma crescente os elementos, através da conversão deles em strings e, em seguida, compara suas sequências de valores de unidades de código UTF-16.
+// // SORT - ordena de forma crescente os elementos, através da conversão deles em strings e, em seguida, compara suas sequências de valores de unidades de código UTF-16.
 
-let cars = ['hb20', 'fusca', 'gol', 'logan', 'palio', 'uno', 'polo'];
-console.log(cars.sort()); //resposta --> ["fusca", "gol", "hb20", "logan", "palio", "polo", "uno"]
+// let cars = ['hb20', 'fusca', 'gol', 'logan', 'palio', 'uno', 'polo'];
+// console.log(cars.sort()); //resposta --> ["fusca", "gol", "hb20", "logan", "palio", "polo", "uno"]
 
 
 
@@ -26,6 +26,7 @@ console.log(cars.sort()); //resposta --> ["fusca", "gol", "hb20", "logan", "pali
 
 // Este elemento é o botão que irá iniciar o evento
 let getPlayerChoice = document.getElementById('getPlayerChoice');
+let imgWinner = document.getElementById('img-winner');
 
 // Ao acionar o botão com um click, ele vai executar a função automaticamente (por isso só chamamos ela pelo nome)
 getPlayerChoice.addEventListener('click', result);
@@ -58,19 +59,31 @@ function compareMove(playerChoice, computerChoice){
     let winner = document.getElementById('winner');
 
     if (playerChoice === computerChoice) {
-        console.log('empate');
+        imgWinner.src = " "
         winner.innerHTML = `<p> O Resultado é empate!! </p>`
+    
     } else if (playerChoice === 'pedra' && computerChoice === 'tesoura') {
+        imgWinner.src = "img/usuario.png"
         winner.innerHTML = `<p> A pedra ganhou da tesoura!! Você ganhou do computador. </p>`
+    
     } else if (playerChoice === 'pedra' && computerChoice === 'papel') {
+        imgWinner.src = "img/computador.png"
         winner.innerHTML = `<p> A papel ganhou da pedra!! O computador ganhou do você. </p>`
+    
     } else if (playerChoice === 'tesoura' && computerChoice === 'papel') {
+        imgWinner.src = "img/usuario.png"
         winner.innerHTML = `<p> A tesoura ganhou do papel!! Você ganhou do computador. </p>`
+    
     } else if (playerChoice === 'tesoura' && computerChoice === 'pedra') {
+        imgWinner.src = "img/computador.png"
         winner.innerHTML = `<p> A pedra ganhou da tesoura!! O computador ganhou do você. </p>`
+    
     } else if (playerChoice === 'papel' && computerChoice === 'pedra') {
+        imgWinner.src = "img/usuario.png"
         winner.innerHTML = `<p> A papel ganhou da pedra!! Você ganhou do computador. </p>`
+    
     } else if (playerChoice === 'papel' && computerChoice === 'tesoura') {
+        imgWinner.src = "img/computador.png"
         winner.innerHTML = `<p> A tesoura ganhou da papel!! O computador ganhou do você. </p>`
     }
 
