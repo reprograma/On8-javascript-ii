@@ -11,6 +11,7 @@
 ##### funcionalidades
 * Deve guardar as possibilidades de jogada (Adivinha aonde? isso mesmo, numa array!) 
 * Deve existir uma variável "computerChoice" que de forma aleatória consegue retornar uma das possibilidades de jogada
+<!-- Dica: utilizar Math.random() -->
 * Deve existir uma lógica onde cada jogada é analisada e um vencedor é nomeado. Não deve haver vencedor se na jogada houver um empate: 
 
 Pedra x Tesoura ✂ = Pedra ganha, tesoura perde
@@ -19,4 +20,4 @@ Pedra x Pedra 👊🏻 = Empate!
 
 - Dica: use ```if/else/else if``` ou ```switch/case/break```
 
-* Deixe o usuário saber quando ele não escrever as palavras corretamente! Crie um alerta de feedback para ele saber o que fazer 
+*Extra: Deixe o usuário saber quando ele não escrever as palavras corretamente! Crie um alerta de feedback para ele saber o que fazer 

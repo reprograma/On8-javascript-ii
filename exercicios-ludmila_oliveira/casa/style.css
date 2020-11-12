@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f1f5f7;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  width: 70%;
+  margin: 10rem auto;
+  text-align: center;
+}
+
+.winner-box {
+  margin-top: 1rem;
+}
+
+.player-box {
+  margin-bottom: .5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.player-box label {
+  margin-right: 1rem;
+}
+
+.input {
+  min-width: 10rem;
+  padding: .6rem;
+  border-radius:  0 1rem 0 1rem;
+  border:1px dashed #157b9a; 
+}
+
+.btn {
+  border-radius: 0 1rem 0 1rem;
+  padding: .6rem 1rem .6rem 1rem;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  border:1px dashed #fff; 
+  cursor: pointer;
+  background: #157b9a;
+}
+
+small {
+  font-size: 60%;
+  display: block;
+}
+
+label {
+  display: block;
+  margin-bottom: .5rem;
+}
+
+#img-winner {
+  width: 20rem;
+  height: auto;
+  margin: 3rem auto 0 auto;
+}
+
+@media (max-width: 480px){
+  .input {
+    margin-bottom: 1rem; 
+  }
+
+  .btn {
+    font-size: .7em;
+  }
+
+  #img-winner {
+    width: 15rem;
+  }
+
+}
